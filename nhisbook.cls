@@ -28,19 +28,19 @@
 \definecolor{NHISGray}{HTML}{F1F5F9}
 \definecolor{NHISInk}{HTML}{222222}
 \IfFileExists{assets/fonts/Pretendard-ExtraBold.otf}{%
-  \newfontfamily\NHISDisplayFont{Pretendard ExtraBold}%
-}{%
   \newfontfamily\NHISDisplayFont{Pretendard-ExtraBold.otf}[Path=assets/fonts/]%
+}{%
+  \newfontfamily\NHISDisplayFont{Pretendard ExtraBold}%
 }
 
 % Pandoc loads lmodern after the class; choose the bundled Korean fonts at document start.
 \AtBeginDocument{%
   \IfFileExists{assets/fonts/Pretendard-Regular.otf}{%
-    \setmainfont{Pretendard}[BoldFont=Pretendard Bold]%
-    \setsansfont{Pretendard}[BoldFont=Pretendard Bold]%
-  }{%
     \setmainfont{Pretendard-Regular.otf}[Path=assets/fonts/,BoldFont=Pretendard-Bold.otf]%
     \setsansfont{Pretendard-Regular.otf}[Path=assets/fonts/,BoldFont=Pretendard-Bold.otf]%
+  }{%
+    \setmainfont{Pretendard}[BoldFont=Pretendard Bold]%
+    \setsansfont{Pretendard}[BoldFont=Pretendard Bold]%
   }%
   \setmonofont{D2Coding}%
   \renewcommand{\contentsname}{목차}%
