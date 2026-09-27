@@ -1,0 +1,17 @@
+{
+  "name": "NHIS report workshop",
+  "build": {
+    "dockerfile": "../docker/Dockerfile",
+    "options": ["--platform=linux/amd64"]
+  },
+  "runArgs": ["--platform=linux/amd64"],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "rstudio",
+  "updateRemoteUserUID": true,
+  "customizations": {
+    "vscode": {
+      "extensions": ["quarto.quarto", "REditorSupport.r", "openai.chatgpt"]
+    }
+  }
+}

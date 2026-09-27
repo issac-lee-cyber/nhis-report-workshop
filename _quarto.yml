@@ -1,0 +1,42 @@
+project:
+  type: default
+  output-dir: _output
+
+format:
+  pdf:
+    documentclass: nhisbook
+    pdf-engine: xelatex
+    papersize: a4
+    titlepage: false
+    toc: false
+    top-level-division: chapter
+    number-sections: true
+    number-depth: 2
+    colorlinks: true
+    linkcolor: NHISTeal
+    urlcolor: NHISTeal
+    fig-pos: H
+    keep-tex: false
+    geometry:
+      - top=20mm
+      - bottom=14mm
+      - inner=18mm
+      - outer=18mm
+
+crossref:
+  chapters: true
+  fig-title: "그림"
+  fig-prefix: "그림"
+  tbl-title: "표"
+  tbl-prefix: "표"
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
+knitr:
+  opts_chunk:
+    crop: false
+
+editor: source
