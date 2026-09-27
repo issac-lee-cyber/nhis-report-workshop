@@ -2,12 +2,12 @@
 
 이 Docker 이미지는 Quarto 1.6.42, R 4.4.2, XeLaTeX, 실습용 R 패키지, D2Coding 글꼴과 Codex CLI를 제공합니다. 데모는 외부 데이터 없이 실행됩니다. `data/` 폴더는 배포하지 않습니다.
 
-## 이미지 만들기
+## 이미지 받기
 
-프로젝트 루트 폴더에서 실행합니다.
+Docker Hub에서 공개 이미지를 받습니다.
 
 ```bash
-docker build --platform linux/amd64 -t nhis-report-workshop:1.0 ./docker
+docker pull --platform linux/amd64 statplaybook/nhis-report-workshop:latest
 ```
 
 ## PDF 만들기
@@ -18,7 +18,7 @@ macOS 또는 Linux에서는 실습 폴더에서 다음 명령을 실행합니다
 docker run --rm --platform linux/amd64 \
   --user "$(id -u):$(id -g)" -e HOME=/tmp \
   -v "$(pwd):/workspace" \
-  -w /workspace nhis-report-workshop:1.0 \
+  -w /workspace statplaybook/nhis-report-workshop:latest \
   quarto render demo.qmd --to pdf
 ```
 
@@ -35,9 +35,9 @@ docker run --rm --platform linux/amd64 \
 ## Windows PowerShell
 
 ```powershell
-docker build --platform linux/amd64 -t nhis-report-workshop:1.0 .\docker
+docker build --platform linux/amd64 -t statplaybook/nhis-report-workshop:latest .\docker
 $workshop = (Get-Location).Path
-docker run --rm --platform linux/amd64 --mount "type=bind,source=$workshop,target=/workspace" -w /workspace nhis-report-workshop:1.0 quarto render demo.qmd --to pdf
+docker run --rm --platform linux/amd64 --mount "type=bind,source=$workshop,target=/workspace" -w /workspace statplaybook/nhis-report-workshop:latest quarto render demo.qmd --to pdf
 ```
 
 ## 글꼴 출처

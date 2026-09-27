@@ -13,7 +13,7 @@ QMD 파일을 편집하고 한글 PDF로 렌더링하는 최소 실습 환경입
 
 ## 시작하기
 
-Docker와 VS Code의 Dev Containers 확장을 설치한 뒤 이 폴더를 VS Code에서 엽니다. 명령 팔레트에서 **Dev Containers: Reopen in Container**를 실행하면 실행 환경을 빌드합니다.
+Docker와 VS Code의 Dev Containers 확장을 설치한 뒤 이 폴더를 VS Code에서 엽니다. 명령 팔레트에서 **Dev Containers: Reopen in Container**를 실행하면 [Docker Hub 이미지](https://hub.docker.com/r/statplaybook/nhis-report-workshop)를 받아 실행합니다.
 
 컨테이너 터미널에서 다음 명령으로 데모 PDF를 만듭니다.
 

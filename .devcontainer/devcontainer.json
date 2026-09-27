@@ -1,9 +1,6 @@
 {
   "name": "NHIS report workshop",
-  "build": {
-    "dockerfile": "../docker/Dockerfile",
-    "options": ["--platform=linux/amd64"]
-  },
+  "image": "statplaybook/nhis-report-workshop:latest",
   "runArgs": ["--platform=linux/amd64"],
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
   "workspaceFolder": "/workspace",
