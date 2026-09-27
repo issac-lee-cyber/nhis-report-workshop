@@ -42,4 +42,4 @@ docker run --rm --platform linux/amd64 --mount "type=bind,source=$workshop,targe
 
 ## 글꼴 출처
 
-D2Coding은 NAVER의 SIL Open Font License 글꼴입니다. Docker 이미지 생성 시 공식 저장소의 1.3.3 태그에서 글꼴과 라이선스를 받습니다. Pretendard 글꼴과 라이선스는 실습 폴더의 `assets/fonts/`에 포함되어 있습니다.
+D2Coding은 NAVER의 SIL Open Font License 글꼴입니다. Docker 이미지 생성 시 공식 저장소의 1.3.3 태그에서 글꼴과 라이선스를 받습니다. Pretendard도 공식 1.3.9 릴리스에서 받아 설치하며, 라이선스 사본은 `assets/fonts/LICENSE.txt`에 포함되어 있습니다.

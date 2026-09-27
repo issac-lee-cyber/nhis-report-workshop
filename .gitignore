@@ -14,3 +14,5 @@
 /.vscode/
 /workshop-steps/
 /assets/charts/
+/assets/fonts/*.otf
+/assets/*.pdf

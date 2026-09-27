@@ -7,8 +7,7 @@ QMD 파일을 편집하고 한글 PDF로 렌더링하는 최소 실습 환경입
 - `demo.qmd`: 편집을 시작할 데모 문서
 - `_quarto.yml`: PDF 출력 설정
 - `nhisbook.cls`: PDF 서식
-- `assets/fonts/`: Pretendard 글꼴과 라이선스
-- `assets/top_logo.pdf`, `assets/keyboard.pdf`: 서식에서 사용하는 이미지
+- `assets/fonts/LICENSE.txt`: Pretendard 글꼴 라이선스
 - `.devcontainer/`: VS Code 컨테이너 설정
 - `docker/`: 실행 환경의 Dockerfile과 실행 안내
 
@@ -29,3 +28,5 @@ VS Code 없이 Docker로 실행하는 방법은 [Docker 안내](docker/README.md
 ## 공개 범위
 
 `data/`, 렌더링 결과, 캐시와 로그는 Git에서 제외합니다. 개인별 데이터가 필요하면 로컬 `data/` 폴더에 별도로 준비합니다.
+
+Pretendard와 D2Coding 글꼴은 Docker 이미지를 만들 때 공식 배포처에서 설치됩니다.
